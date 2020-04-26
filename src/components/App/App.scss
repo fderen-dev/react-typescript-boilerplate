@@ -1,0 +1,36 @@
+@import '../../styles/colors';
+
+.app {
+  position: relative;
+  height: 100%;
+  width: 100%;
+
+  background-color: $dark-grey;
+}
+
+.examplary-container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  top: 25%;
+  width: 50%;
+  height: 50%;
+  margin: 0 auto;
+  img {
+    width: 100%;
+    height: auto;
+    animation-name: spin;
+    animation-duration: 7s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+  }
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}

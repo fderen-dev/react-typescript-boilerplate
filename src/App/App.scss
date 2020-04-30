@@ -1,11 +1,11 @@
-@import '../../styles/colors';
+@import '../styles/colors';
 
 .app {
   position: relative;
   height: 100%;
   width: 100%;
 
-  background-color: $dark-grey;
+  overflow: hidden;
 }
 
 .examplary-container {
@@ -13,16 +13,36 @@
   display: flex;
   flex-direction: column;
   top: 25%;
+  min-width: 300px;
   width: 50%;
-  height: 50%;
+  height: auto;
   margin: 0 auto;
+
+  h1 {
+    color: $yellow;
+    text-align: center;
+    margin-top: 5%;
+    font-family: 'Exo', sans-serif;
+  }
   img {
-    width: 100%;
+    width: 80%;
     height: auto;
+    margin: 0 auto;
     animation-name: spin;
     animation-duration: 7s;
     animation-timing-function: linear;
     animation-iteration-count: infinite;
+  }
+}
+
+@media only screen and (orientation: landscape) {
+  .examplary-container {
+    width: auto;
+    min-height: 300px;
+    height: 50%;
+    h1 {
+      margin-top: 2%;
+    }
   }
 }
 

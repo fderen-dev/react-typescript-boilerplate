@@ -1,4 +1,4 @@
-import React, { FunctionComponent } from 'react';
+import React from 'react';
 import { useSelector } from 'react-redux';
 
 import { RootState } from '../state/reducer';
@@ -7,7 +7,7 @@ import gear from '../statics/icons/gear.svg';
 
 import './App.scss';
 
-const App: FunctionComponent = () => {
+const App: React.FunctionComponent = () => {
   const header: string = useSelector((state: RootState) => state.example.header);
   return (
     <div className="app">

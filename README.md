@@ -4,16 +4,14 @@
 
 ### Tech stack
 
-- [x] React.js 16.13
-- [x] TypeScript, 3.8
-- [x] Webpack 4.43
-- [x] Redux Toolkit 1.3
+- [x] React.js 16
+- [x] TypeScript 3
+- [x] Webpack 4
+- [x] Redux Toolkit
 - [x] Babel
 - [x] ESlint, Prettier
+- [x] Jest
 
-Webpack loaders:
-
-- [x] svg-url-loader
-- [x] file-loader
-- [x] css-loader
-- [x] sass-loader
+- [x] Code splitting,
+- [x] sass, css extraction,
+- [x] Postcss + autoprefixer.

@@ -22,7 +22,7 @@
   "rules": {
     "react/prop-types": 0,
     "@typescript-eslint/explicit-function-return-type": ["warn", { "allowExpressions": true }],
-    "@typescript-eslint/ban-ts-ignore": "warn",
+    "@typescript-eslint/ban-tslint-comment": "warn",
     "@typescript-eslint/no-var-requires": 0
   }
 }

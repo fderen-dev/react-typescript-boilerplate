@@ -1,15 +1,15 @@
-const path = require('path');
-const HtmlWebpackPlugin = require('html-webpack-plugin');
-const MiniCssExtractPlugin = require('mini-css-extract-plugin');
-const TerserJSPlugin = require('terser-webpack-plugin');
-const OptimizeCSSAssetsPlugin = require('optimize-css-assets-webpack-plugin');
+const path = require('path')
+const HtmlWebpackPlugin = require('html-webpack-plugin')
+const MiniCssExtractPlugin = require('mini-css-extract-plugin')
+const TerserJSPlugin = require('terser-webpack-plugin')
+const OptimizeCSSAssetsPlugin = require('optimize-css-assets-webpack-plugin')
 
-const sourcePath = path.join(__dirname, 'src');
-const buildPath = path.join(__dirname, 'dist');
-let isProd = false;
+const sourcePath = path.join(__dirname, 'src')
+const buildPath = path.join(__dirname, 'dist')
+let isProd = false
 
 module.exports = (env, argv) => {
-  if (argv.mode === 'production') isProd = true;
+  if (argv.mode === 'production') isProd = true
 
   return {
     entry: path.join(sourcePath, 'index'),
@@ -78,5 +78,5 @@ module.exports = (env, argv) => {
       inline: true,
       stats: 'minimal',
     },
-  };
-};
+  }
+}

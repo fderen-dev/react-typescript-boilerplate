@@ -7,7 +7,6 @@
 - [x] React.js 16
 - [x] TypeScript 3
 - [x] Webpack 4
-- [x] Redux Toolkit
 - [x] Babel
 - [x] ESlint, Prettier
 - [x] Jest

@@ -1,22 +1,14 @@
-import React from 'react';
-import { useSelector } from 'react-redux';
+import React from 'react'
+import gear from '../statics/icons/gear.svg'
+import './App.scss'
 
-import { RootState } from '../state/reducer';
-
-import gear from '../statics/icons/gear.svg';
-
-import './App.scss';
-
-const App: React.FunctionComponent = () => {
-  const header: string = useSelector((state: RootState) => state.example.header);
-  return (
-    <div className="app">
-      <div className="examplary-container">
-        <img src={gear} />
-        <h1>{header}</h1>
-      </div>
+const App: React.FunctionComponent = () => (
+  <div className="app">
+    <div className="examplary-container">
+      <img src={gear} />
+      <h1>React-typescript-boilerplate</h1>
     </div>
-  );
-};
+  </div>
+)
 
-export default App;
+export default App

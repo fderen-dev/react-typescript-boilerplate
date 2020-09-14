@@ -1,23 +1,15 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import { Provider } from 'react-redux';
+import React from 'react'
+import ReactDOM from 'react-dom'
 
-import store from './state/store';
-
-import './index.css';
+import './index.css'
 
 function render(): void {
-  const App = require('./App').default;
-  ReactDOM.render(
-    <Provider store={store}>
-      <App />
-    </Provider>,
-    document.getElementById('root'),
-  );
+  const App = require('./App').default
+  ReactDOM.render(<App />, document.getElementById('root'))
 }
 
-render();
+render()
 
 if (process.env.NODE_ENV === 'development' && module.hot) {
-  module.hot.accept('./App', render);
+  module.hot.accept('./App', render)
 }
